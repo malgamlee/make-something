@@ -20,18 +20,20 @@
           display: inline-block;
           height: 200px;
           width: 198px;
-          transition: 0.3s;
+          transition: 0.5s;
           background-color: green;
           text-align: center;
           font-size: 30px;
           margin: 0 20px;
-          filter: blur(2px);
+          filter: blur(3px);
+          transform: rotateY(180deg);
         }
 
         .center {
           filter: blur(0);
           width: 228px;
           height: 230px;
+          transform: rotateY(0);
         }
       }
     }
