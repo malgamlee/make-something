@@ -1,0 +1,81 @@
+.centerCarousel {
+  .carousel {
+    width: 860px;
+    position: relative;
+
+    .out {
+      overflow: hidden;
+      width: 720px;
+      height: 250px;
+      margin: 0 70px;
+
+      .cardWrapper {
+        list-style: none;
+        white-space: nowrap;
+        padding-inline-start: 0;
+        transition: 0.3s;
+
+        .card {
+          vertical-align: middle;
+          display: inline-block;
+          height: 200px;
+          width: 198px;
+          transition: 0.5s;
+          background-color: green;
+          text-align: center;
+          font-size: 30px;
+          margin: 0 20px;
+          filter: blur(3px);
+          transform: rotateY(180deg);
+        }
+
+        .center {
+          filter: blur(0);
+          width: 228px;
+          height: 230px;
+          transform: rotateY(0);
+        }
+      }
+    }
+
+    .moveBtn {
+      position: absolute;
+      border: 1px solid black;
+      border-radius: 25px;
+      background-color: white;
+      cursor: pointer;
+      top: 40%;
+
+      .arrow {
+        width: 10px;
+        height: 10px;
+      }
+
+      .iconLeft {
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        transform: rotate(-45deg);
+      }
+
+      .iconRight {
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        transform: rotate(45deg);
+      }
+    }
+
+    .left {
+      left: 10px;
+      padding: 15px 12px 15px 18px;
+    }
+
+    .right {
+      right: 10px;
+      padding: 15px 18px 15px 12px;
+    }
+
+    .hide {
+      display: none;
+    }
+  }
+}
